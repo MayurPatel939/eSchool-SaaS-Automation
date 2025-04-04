@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource  ../Resources/Schools_Keyword.robot
+Resource  ../Resources/Schools_Register_Form_Field_Keywords.robot
 Resource  ../Resources/Login_Keywords.robot
 
 *** Variables ***
@@ -10,8 +10,8 @@ ${usr}  superadmin@gmail.com
 ${pwd}  superadmin
 
 #   Manage Form Data
-${name}     aaa
-${txt}  Text
+${name}     bel
+${txt}      Text
 
 *** Test Cases ***
 Manage Form Test
@@ -20,6 +20,7 @@ Manage Form Test
     click login button
     enter username  ${usr}
     enter password  ${pwd}
+
     click sign in button
     Wait Until Element Is Visible  ${link_school}  timeout=10s
     click on school

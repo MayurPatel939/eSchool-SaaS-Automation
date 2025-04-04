@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04ef8c48-4db1-48a3-a87f-656e23ab396a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PageObjects/Login_Locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PageObjects/Manage_Schools_Locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PageObjects/Register_Your_School_Locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PageObjects/Schools_Locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Login_Keywords.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Manage_Schools_Keywords.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Register_Your_School_Keywords.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/School_Register_Form_Field_Keywords.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/Login_Test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/Login_Test1.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/Manage_Schools_Test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/Register_Your_School_Test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/Schools_Register_Form_Fields_Test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+    <list default="true" id="04ef8c48-4db1-48a3-a87f-656e23ab396a" name="Changes" comment="commit -m &quot;adding all scripts&quot;">
+      <change afterPath="$PROJECT_DIR$/AutoItScripts/fileupload.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/Manage_Schools_Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Manage_Schools_Locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Manage_Schools_Keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Manage_Schools_Keywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/School_Register_Form_Field_Keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Schools_Register_Form_Field_Keywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/Manage_Schools_Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Manage_Schools_Test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/Schools_Register_Form_Fields_Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Schools_Register_Form_Fields_Test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MayurPatel939/Automation",
-    "accountId": "d3858a09-c94f-48e1-bc4c-8d6f673390c9"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MayurPatel939&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MayurPatel939/Automation&quot;,
+    &quot;accountId&quot;: &quot;d3858a09-c94f-48e1-bc4c-8d6f673390c9&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -53,16 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/GURUDEV/Documents/intellibot.jar&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Manage_Schools_Locators.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/GURUDEV/Documents/intellibot.jar",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GURUDEV\PycharmProjects\Automation\AutoItScripts" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,6 +79,15 @@
       <option name="presentableId" value="Default" />
       <updated>1743408359085</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit -m &quot;adding all scripts&quot;">
+      <option name="closed" value="true" />
+      <created>1743743237310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743743237310</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit -m &quot;adding all scripts&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;adding all scripts&quot;" />
   </component>
 </project>

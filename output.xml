@@ -1,292 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-04T10:23:36.951937" rpa="false" schemaversion="5">
-<suite id="s1" name="Login Test1" source="C:\Users\GURUDEV\PycharmProjects\Automation\TestCases\Login_Test1.robot">
-<test id="s1-t1" name="Valid Login" line="11">
-<kw name="Login With Credentials">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-04T16:04:30.955633" rpa="false" schemaversion="5">
+<suite id="s1" name="Manage Schools Test" source="C:\Users\GURUDEV\PycharmProjects\Automation\TestCases\Manage_Schools_Test.robot">
+<test id="s1-t1" name="Manage Schools" line="26">
+<kw name="open my browser" owner="Login_Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:37.393735" level="INFO">Opening browser 'Chrome' to base url 'https://wrteam.net/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2025-04-04T16:04:31.340877" level="INFO">Opening browser 'chrome' to base url 'https://wrteam.net/'.</msg>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-04T10:23:37.393406" elapsed="7.438190"/>
+<status status="PASS" start="2025-04-04T16:04:31.340430" elapsed="10.896679"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-04T10:23:44.831984" elapsed="0.142510"/>
+<status status="PASS" start="2025-04-04T16:04:42.237492" elapsed="0.306583"/>
+</kw>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-04-04T16:04:31.339482" elapsed="11.204791"/>
 </kw>
 <kw name="click login button" owner="Login_Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:44.976325" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
+<msg time="2025-04-04T16:04:42.557339" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
 <arg>${btn_ClickOnLoginButton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:23:44.975380" elapsed="1.909547"/>
+<status status="PASS" start="2025-04-04T16:04:42.556448" elapsed="1.492178"/>
 </kw>
-<status status="PASS" start="2025-04-04T10:23:44.974875" elapsed="1.910296"/>
+<status status="PASS" start="2025-04-04T16:04:42.555477" elapsed="1.493357"/>
 </kw>
 <kw name="enter username" owner="Login_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:46.886711" level="INFO">Typing text 'superadmin@gmail.com' into text field 'id:email'.</msg>
+<msg time="2025-04-04T16:04:44.050460" level="INFO">Typing text 'superadmin@gmail.com' into text field 'id:email'.</msg>
 <arg>${txt_LoginUserName}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:23:46.886124" elapsed="0.196184"/>
+<status status="PASS" start="2025-04-04T16:04:44.049990" elapsed="0.199332"/>
 </kw>
-<arg>${username}</arg>
-<status status="PASS" start="2025-04-04T10:23:46.885475" elapsed="0.197034"/>
-</kw>
-<kw name="enter password" owner="Login_Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:47.083839" level="INFO">Typing text 'superadmin' into text field 'id:password'.</msg>
-<arg>${txt_LoginPassword}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:23:47.083301" elapsed="0.174025"/>
-</kw>
-<arg>${password}</arg>
-<status status="PASS" start="2025-04-04T10:23:47.082788" elapsed="0.174792"/>
-</kw>
-<kw name="click sign in button" owner="Login_Keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:47.259073" level="INFO">Clicking button 'id:login_btn'.</msg>
-<arg>${btn_SignInButton}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:23:47.258733" elapsed="4.351262"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:23:47.258223" elapsed="4.351964"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-04T10:23:56.612641" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-04T10:23:51.610523" elapsed="5.002512"/>
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:56.692006" level="INFO">Current page contains text 'Dashboard'.</msg>
-<arg>Dashboard</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-04-04T10:23:56.615493" elapsed="0.076599"/>
-</kw>
-<arg>'${expected_result}'=='Dashboard'</arg>
-<arg>Page Should Contain</arg>
-<arg>Dashboard</arg>
-<arg>ELSE</arg>
-<arg>Page Should Contain</arg>
-<arg>${expected_result}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-04-04T10:23:56.613750" elapsed="0.078421"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-04T10:23:56.692303" elapsed="2.480759"/>
-</kw>
-<arg>superadmin@gmail.com</arg>
-<arg>superadmin</arg>
-<arg>Dashboard</arg>
-<status status="PASS" start="2025-04-04T10:23:37.392478" elapsed="21.781184"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:23:37.391493" elapsed="21.783472"/>
-</test>
-<test id="s1-t2" name="Invalid Password" line="12">
-<kw name="Login With Credentials">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:23:59.182557" level="INFO">Opening browser 'Chrome' to base url 'https://wrteam.net/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-04T10:23:59.181743" elapsed="9.307032"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-04T10:24:08.489075" elapsed="0.182216"/>
-</kw>
-<kw name="click login button" owner="Login_Keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:08.673633" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
-<arg>${btn_ClickOnLoginButton}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:08.672213" elapsed="1.838194"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:24:08.671602" elapsed="1.838977"/>
-</kw>
-<kw name="enter username" owner="Login_Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:10.511744" level="INFO">Typing text 'superadmin@gmail.com' into text field 'id:email'.</msg>
-<arg>${txt_LoginUserName}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:10.511352" elapsed="0.222426"/>
-</kw>
-<arg>${username}</arg>
-<status status="PASS" start="2025-04-04T10:24:10.510838" elapsed="0.223135"/>
+<arg>${usr}</arg>
+<status status="PASS" start="2025-04-04T16:04:44.049388" elapsed="0.200132"/>
 </kw>
 <kw name="enter password" owner="Login_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:10.734998" level="INFO">Typing text 'wrongpass' into text field 'id:password'.</msg>
+<msg time="2025-04-04T16:04:44.251539" level="INFO">Typing text 'superadmin' into text field 'id:password'.</msg>
 <arg>${txt_LoginPassword}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:10.734709" elapsed="0.170113"/>
+<status status="PASS" start="2025-04-04T16:04:44.250917" elapsed="0.177242"/>
 </kw>
-<arg>${password}</arg>
-<status status="PASS" start="2025-04-04T10:24:10.734222" elapsed="0.170743"/>
-</kw>
-<kw name="click sign in button" owner="Login_Keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:10.905728" level="INFO">Clicking button 'id:login_btn'.</msg>
-<arg>${btn_SignInButton}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:10.905515" elapsed="1.439643"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:24:10.905200" elapsed="1.440157"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-04T10:24:17.346397" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-04T10:24:12.345558" elapsed="5.001249"/>
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:17.408582" level="INFO">Current page contains text 'The provided credentials do not match our records.'.</msg>
-<arg>${expected_result}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-04-04T10:24:17.348079" elapsed="0.060772"/>
-</kw>
-<arg>'${expected_result}'=='Dashboard'</arg>
-<arg>Page Should Contain</arg>
-<arg>Dashboard</arg>
-<arg>ELSE</arg>
-<arg>Page Should Contain</arg>
-<arg>${expected_result}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-04-04T10:24:17.347320" elapsed="0.061666"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-04T10:24:17.409503" elapsed="2.360984"/>
-</kw>
-<arg>superadmin@gmail.com</arg>
-<arg>wrongpass</arg>
-<arg>The provided credentials do not match our records.</arg>
-<status status="PASS" start="2025-04-04T10:23:59.180284" elapsed="20.590777"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:23:59.178177" elapsed="20.594284"/>
-</test>
-<test id="s1-t3" name="Invalid Username" line="13">
-<kw name="Login With Credentials">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:19.779634" level="INFO">Opening browser 'Chrome' to base url 'https://wrteam.net/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-04T10:24:19.778867" elapsed="9.611192"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-04T10:24:29.390458" elapsed="0.176268"/>
-</kw>
-<kw name="click login button" owner="Login_Keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:29.568005" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
-<arg>${btn_ClickOnLoginButton}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:29.567622" elapsed="2.177284"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:24:29.567045" elapsed="2.178030"/>
-</kw>
-<kw name="enter username" owner="Login_Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:31.746618" level="INFO">Typing text 'wrongadmin' into text field 'id:email'.</msg>
-<arg>${txt_LoginUserName}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:31.746201" elapsed="0.174153"/>
-</kw>
-<arg>${username}</arg>
-<status status="PASS" start="2025-04-04T10:24:31.745327" elapsed="0.175286"/>
-</kw>
-<kw name="enter password" owner="Login_Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:31.923380" level="INFO">Typing text 'superadmin' into text field 'id:password'.</msg>
-<arg>${txt_LoginPassword}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:31.922297" elapsed="0.184023"/>
-</kw>
-<arg>${password}</arg>
-<status status="PASS" start="2025-04-04T10:24:31.921108" elapsed="0.185385"/>
+<arg>${pwd}</arg>
+<status status="PASS" start="2025-04-04T16:04:44.250071" elapsed="0.178262"/>
 </kw>
 <kw name="click sign in button" owner="Login_Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:32.107480" level="INFO">Clicking button 'id:login_btn'.</msg>
+<msg time="2025-04-04T16:04:44.429460" level="INFO">Clicking button 'id:login_btn'.</msg>
 <arg>${btn_SignInButton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-04T10:24:32.107140" elapsed="1.380721"/>
+<status status="PASS" start="2025-04-04T16:04:44.429176" elapsed="3.973957"/>
 </kw>
-<status status="PASS" start="2025-04-04T10:24:32.106751" elapsed="1.381281"/>
+<status status="PASS" start="2025-04-04T16:04:44.428778" elapsed="3.974607"/>
+</kw>
+<kw name="click on schools link" owner="Manage_Schools_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:48.405439" level="INFO">Clicking element 'xpath://span[normalize-space()='Schools']'.</msg>
+<arg>${link_school}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:48.404389" elapsed="0.135170"/>
+</kw>
+<status status="PASS" start="2025-04-04T16:04:48.403829" elapsed="0.135911"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${link_Click_On_Manage_Schools}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-04T16:04:48.541268" elapsed="0.262948"/>
+</kw>
+<kw name="click on Manage School Link" owner="Manage_Schools_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:48.805478" level="INFO">Clicking element 'xpath://a[normalize-space()='Manage Schools']'.</msg>
+<arg>${link_Click_On_Manage_Schools}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:48.805136" elapsed="1.287319"/>
+</kw>
+<status status="PASS" start="2025-04-04T16:04:48.804708" elapsed="1.287989"/>
+</kw>
+<kw name="enter school name" owner="Manage_Schools_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:50.095588" level="INFO">Typing text 'CodexSchool' into text field 'school_name'.</msg>
+<arg>${txt_School_Name}</arg>
+<arg>${schoolname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:50.095130" elapsed="0.220314"/>
+</kw>
+<arg>${schoolname}</arg>
+<status status="PASS" start="2025-04-04T16:04:50.093596" elapsed="0.221965"/>
+</kw>
+<kw name="click on upload button" owner="Manage_Schools_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:50.317542" level="INFO">Clicking element 'xpath:(//button[@type='button'][normalize-space()='Upload'])[1]'.</msg>
+<arg>${btn_upload_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:50.317120" elapsed="0.120480"/>
+</kw>
+<status status="PASS" start="2025-04-04T16:04:50.316370" elapsed="0.121373"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2025-04-04T16:04:50.438379" level="INFO">Starting process:
+C:/Users/GURUDEV/Documents/file_upload.exe</msg>
+<msg time="2025-04-04T16:04:50.448248" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-04-04T16:04:56.587550" level="INFO">Process completed.</msg>
+<arg>${UPLOAD_EXE}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-04-04T16:04:50.438098" elapsed="6.149569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${txt_School_Email}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-04T16:04:56.588023" elapsed="0.125721"/>
+</kw>
+<kw name="enter school email" owner="Manage_Schools_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:56.718819" level="INFO">Typing text 'abcd@gmail.com' into text field 'id:school_support_email'.</msg>
+<arg>${txt_School_Email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:56.718351" elapsed="0.368750"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-04-04T16:04:56.717767" elapsed="0.369517"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${txt_School_Phone}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.087713" elapsed="0.029606"/>
+</kw>
+<kw name="enter school phone" owner="Manage_Schools_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:57.118145" level="INFO">Typing text '8142425262' into text field 'id:school_support_phone'.</msg>
+<arg>${txt_School_Phone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.117942" elapsed="0.178139"/>
+</kw>
+<arg>${phone}</arg>
+<status status="PASS" start="2025-04-04T16:04:57.117636" elapsed="0.178621"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${txt_School_Tagline}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.296662" elapsed="0.028385"/>
+</kw>
+<kw name="enter school tagline" owner="Manage_Schools_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:57.327927" level="INFO">Typing text 'New School Opening' into text field 'id:school_tagline'.</msg>
+<arg>${txt_School_Tagline}</arg>
+<arg>${tagline}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.327348" elapsed="0.210344"/>
+</kw>
+<arg>${tagline}</arg>
+<status status="PASS" start="2025-04-04T16:04:57.326675" elapsed="0.211187"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${txt_School_Address}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.538771" elapsed="0.052134"/>
+</kw>
+<kw name="enter school address" owner="Manage_Schools_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:57.595091" level="INFO">Typing text 'Hospital road, Bhuj' into text field 'id:school_address'.</msg>
+<arg>${txt_School_Address}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.594595" elapsed="0.358270"/>
+</kw>
+<arg>${address}</arg>
+<status status="PASS" start="2025-04-04T16:04:57.593972" elapsed="0.359052"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${txt_School_Code_Prefix}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:57.957407" elapsed="0.127184"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${txt_School_Code_Prefix}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-04T16:04:58.085071" elapsed="0.060199"/>
+</kw>
+<kw name="enter school code prefix" owner="Manage_Schools_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:58.147131" level="INFO">Typing text 'SCHCOD' into text field 'id:school_code_prefix'.</msg>
+<arg>${txt_School_Code_Prefix}</arg>
+<arg>${code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:58.146506" elapsed="0.164414"/>
+</kw>
+<arg>${code}</arg>
+<status status="PASS" start="2025-04-04T16:04:58.145954" elapsed="0.165105"/>
+</kw>
+<kw name="click on domain type" owner="Manage_Schools_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:58.312237" level="INFO">Clicking element '(//label[@class='form-check-label'][normalize-space()='Custom'])[1]'.</msg>
+<arg>${radio_btn_Domain_Type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:58.311920" elapsed="0.156249"/>
+</kw>
+<status status="PASS" start="2025-04-04T16:04:58.311411" elapsed="0.157156"/>
+</kw>
+<kw name="enter domain name" owner="Manage_Schools_Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:58.475563" level="INFO">Executing JavaScript:
+document.getElementById("edit_custom_domain").value = "Codex.com"
+Without any arguments.</msg>
+<arg>document.getElementById("edit_custom_domain").value = "${domain}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-04-04T16:04:58.472700" elapsed="0.014653"/>
+</kw>
+<arg>${domain}</arg>
+<status status="PASS" start="2025-04-04T16:04:58.472080" elapsed="0.015476"/>
+</kw>
+<kw name="click on submit" owner="Manage_Schools_Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:58.490226" level="INFO">Executing JavaScript:
+window.scrollBy(1778, 871);
+Without any arguments.</msg>
+<arg>window.scrollBy(1778, 871);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-04-04T16:04:58.489331" elapsed="0.017003"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-04T16:04:58.507281" level="INFO">Clicking element 'id:create-btn'.</msg>
+<arg>${btn_submit_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T16:04:58.506822" elapsed="0.359521"/>
+</kw>
+<status status="PASS" start="2025-04-04T16:04:58.488184" elapsed="0.378317"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-04T10:24:38.489505" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-04-04T16:05:08.867938" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-04T10:24:33.488222" elapsed="5.001612"/>
+<status status="PASS" start="2025-04-04T16:04:58.867151" elapsed="10.000923"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-04-04T10:24:38.566408" level="INFO">Current page contains text 'The provided credentials do not match our records.'.</msg>
-<arg>${expected_result}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-04-04T10:24:38.491758" elapsed="0.074848"/>
-</kw>
-<arg>'${expected_result}'=='Dashboard'</arg>
-<arg>Page Should Contain</arg>
-<arg>Dashboard</arg>
-<arg>ELSE</arg>
-<arg>Page Should Contain</arg>
-<arg>${expected_result}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-04-04T10:24:38.490573" elapsed="0.076171"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-04T10:24:38.566962" elapsed="2.333546"/>
-</kw>
-<arg>wrongadmin</arg>
-<arg>superadmin</arg>
-<arg>The provided credentials do not match our records.</arg>
-<status status="PASS" start="2025-04-04T10:24:19.777502" elapsed="21.123407"/>
-</kw>
-<status status="PASS" start="2025-04-04T10:24:19.775609" elapsed="21.126558"/>
+<status status="PASS" start="2025-04-04T16:04:31.338509" elapsed="37.529916"/>
 </test>
-<test id="s1-t4" name="Empaty Username" line="14">
-<kw name="Login With Credentials">
-<msg time="2025-04-04T10:24:40.907890" level="FAIL">Keyword 'Login With Credentials' expected 3 arguments, got 2.</msg>
-<arg>superadmin</arg>
-<arg>The provided credentials do not match our records.</arg>
-<status status="FAIL" start="2025-04-04T10:24:40.907305" elapsed="0.000797">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
-</kw>
-<status status="FAIL" start="2025-04-04T10:24:40.905471" elapsed="0.004049">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
-</test>
-<test id="s1-t5" name="Empaty Password" line="15">
-<kw name="Login With Credentials">
-<msg time="2025-04-04T10:24:40.917893" level="FAIL">Keyword 'Login With Credentials' expected 3 arguments, got 2.</msg>
-<arg>superadmin@gmail.com</arg>
-<arg>The provided credentials do not match our records.</arg>
-<status status="FAIL" start="2025-04-04T10:24:40.917036" elapsed="0.001146">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
-</kw>
-<status status="FAIL" start="2025-04-04T10:24:40.913137" elapsed="0.006680">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
-</test>
-<status status="FAIL" start="2025-04-04T10:23:36.954413" elapsed="63.969240"/>
+<status status="PASS" start="2025-04-04T16:04:30.957918" elapsed="37.911644"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login Test1" id="s1" pass="3" fail="2" skip="0">Login Test1</stat>
+<stat name="Manage Schools Test" id="s1" pass="1" fail="0" skip="0">Manage Schools Test</stat>
 </suite>
 </statistics>
 <errors>

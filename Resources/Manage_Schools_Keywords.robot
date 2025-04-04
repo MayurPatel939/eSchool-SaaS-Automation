@@ -2,6 +2,7 @@
 Library     SeleniumLibrary
 Variables       ../PageObjects/Manage_Schools_Locators.py
 
+
 #   Manage Schools Elements
 *** Keywords ***
 
@@ -16,14 +17,7 @@ enter school name
     input text  ${txt_School_Name}  ${schoolname}
 
 click on upload button
-    #click button    ${btn_upload_btn}
-    #Choose File  ${btn_upload_btn}  C:\Users\GURUDEV\Downloads\lamborghini.jpg
     Click Element  ${btn_upload_btn}
-    Sleep  2s  # Wait for file dialog
-    Press Keys  none  C:\Users\GURUDEV\Downloads\lamborghini.jpg
-    Sleep  2s
-    Press Keys  none  ENTER
-
 
 enter school email
     [Arguments]  ${email}
@@ -46,12 +40,12 @@ enter school code prefix
     input text  ${txt_School_Code_Prefix}   ${code}
 
 click on domain type
-    Execute JavaScript  document.getElementByxpath('//i[@class='input-helper'][1]').click;
-    #click button    ${radio_btn_Domain_Type}
+    click element    ${radio_btn_Domain_Type}
 
 enter domain name
     [Arguments]  ${domain}
-    input text  ${txt_Default_Domain}   ${domain}
+    Execute JavaScript    document.getElementById("edit_custom_domain").value = "${domain}"
+    #input text  ${txt_Default_Domain}   ${domain}
 
 click on submit
     Execute JavaScript  window.scrollBy(1778, 871);

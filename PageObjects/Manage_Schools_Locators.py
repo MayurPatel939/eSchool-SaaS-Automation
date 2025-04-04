@@ -1,0 +1,13 @@
+#   Manage Schools Elements
+link_school="xpath://span[normalize-space()='Schools']"
+link_Click_On_Manage_Schools="xpath://a[normalize-space()='Manage Schools']"
+txt_School_Name="school_name"
+btn_upload_btn="xpath:(//button[@type='button'][normalize-space()='Upload'])[1]"
+txt_School_Email="id:school_support_email"
+txt_School_Phone="id:school_support_phone"
+txt_School_Tagline="id:school_tagline"
+txt_School_Address="id:school_address"
+txt_School_Code_Prefix="id:school_code_prefix"
+radio_btn_Domain_Type="xpath://input[@class='custom']"
+txt_Default_Domain="xpath:(//i[@class='input-helper'])[1]"
+btn_submit_btn="id:create-btn"

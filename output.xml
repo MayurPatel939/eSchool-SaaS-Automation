@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-04T10:23:36.951937" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test1" source="C:\Users\GURUDEV\PycharmProjects\Automation\TestCases\Login_Test1.robot">
+<test id="s1-t1" name="Valid Login" line="11">
+<kw name="Login With Credentials">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:37.393735" level="INFO">Opening browser 'Chrome' to base url 'https://wrteam.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-04T10:23:37.393406" elapsed="7.438190"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-04T10:23:44.831984" elapsed="0.142510"/>
+</kw>
+<kw name="click login button" owner="Login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:44.976325" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
+<arg>${btn_ClickOnLoginButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:23:44.975380" elapsed="1.909547"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:23:44.974875" elapsed="1.910296"/>
+</kw>
+<kw name="enter username" owner="Login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:46.886711" level="INFO">Typing text 'superadmin@gmail.com' into text field 'id:email'.</msg>
+<arg>${txt_LoginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:23:46.886124" elapsed="0.196184"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-04-04T10:23:46.885475" elapsed="0.197034"/>
+</kw>
+<kw name="enter password" owner="Login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:47.083839" level="INFO">Typing text 'superadmin' into text field 'id:password'.</msg>
+<arg>${txt_LoginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:23:47.083301" elapsed="0.174025"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-04-04T10:23:47.082788" elapsed="0.174792"/>
+</kw>
+<kw name="click sign in button" owner="Login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:47.259073" level="INFO">Clicking button 'id:login_btn'.</msg>
+<arg>${btn_SignInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:23:47.258733" elapsed="4.351262"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:23:47.258223" elapsed="4.351964"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-04T10:23:56.612641" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-04T10:23:51.610523" elapsed="5.002512"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:56.692006" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-04T10:23:56.615493" elapsed="0.076599"/>
+</kw>
+<arg>'${expected_result}'=='Dashboard'</arg>
+<arg>Page Should Contain</arg>
+<arg>Dashboard</arg>
+<arg>ELSE</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_result}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-04-04T10:23:56.613750" elapsed="0.078421"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-04T10:23:56.692303" elapsed="2.480759"/>
+</kw>
+<arg>superadmin@gmail.com</arg>
+<arg>superadmin</arg>
+<arg>Dashboard</arg>
+<status status="PASS" start="2025-04-04T10:23:37.392478" elapsed="21.781184"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:23:37.391493" elapsed="21.783472"/>
+</test>
+<test id="s1-t2" name="Invalid Password" line="12">
+<kw name="Login With Credentials">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:23:59.182557" level="INFO">Opening browser 'Chrome' to base url 'https://wrteam.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-04T10:23:59.181743" elapsed="9.307032"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-04T10:24:08.489075" elapsed="0.182216"/>
+</kw>
+<kw name="click login button" owner="Login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:08.673633" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
+<arg>${btn_ClickOnLoginButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:08.672213" elapsed="1.838194"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:24:08.671602" elapsed="1.838977"/>
+</kw>
+<kw name="enter username" owner="Login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:10.511744" level="INFO">Typing text 'superadmin@gmail.com' into text field 'id:email'.</msg>
+<arg>${txt_LoginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:10.511352" elapsed="0.222426"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-04-04T10:24:10.510838" elapsed="0.223135"/>
+</kw>
+<kw name="enter password" owner="Login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:10.734998" level="INFO">Typing text 'wrongpass' into text field 'id:password'.</msg>
+<arg>${txt_LoginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:10.734709" elapsed="0.170113"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-04-04T10:24:10.734222" elapsed="0.170743"/>
+</kw>
+<kw name="click sign in button" owner="Login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:10.905728" level="INFO">Clicking button 'id:login_btn'.</msg>
+<arg>${btn_SignInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:10.905515" elapsed="1.439643"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:24:10.905200" elapsed="1.440157"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-04T10:24:17.346397" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-04T10:24:12.345558" elapsed="5.001249"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:17.408582" level="INFO">Current page contains text 'The provided credentials do not match our records.'.</msg>
+<arg>${expected_result}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-04T10:24:17.348079" elapsed="0.060772"/>
+</kw>
+<arg>'${expected_result}'=='Dashboard'</arg>
+<arg>Page Should Contain</arg>
+<arg>Dashboard</arg>
+<arg>ELSE</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_result}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-04-04T10:24:17.347320" elapsed="0.061666"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-04T10:24:17.409503" elapsed="2.360984"/>
+</kw>
+<arg>superadmin@gmail.com</arg>
+<arg>wrongpass</arg>
+<arg>The provided credentials do not match our records.</arg>
+<status status="PASS" start="2025-04-04T10:23:59.180284" elapsed="20.590777"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:23:59.178177" elapsed="20.594284"/>
+</test>
+<test id="s1-t3" name="Invalid Username" line="13">
+<kw name="Login With Credentials">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:19.779634" level="INFO">Opening browser 'Chrome' to base url 'https://wrteam.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-04T10:24:19.778867" elapsed="9.611192"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-04T10:24:29.390458" elapsed="0.176268"/>
+</kw>
+<kw name="click login button" owner="Login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:29.568005" level="INFO">Clicking button 'xpath:(//button[@class='commonBtn redirect-login'][normalize-space()='Login'])[1]'.</msg>
+<arg>${btn_ClickOnLoginButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:29.567622" elapsed="2.177284"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:24:29.567045" elapsed="2.178030"/>
+</kw>
+<kw name="enter username" owner="Login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:31.746618" level="INFO">Typing text 'wrongadmin' into text field 'id:email'.</msg>
+<arg>${txt_LoginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:31.746201" elapsed="0.174153"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-04-04T10:24:31.745327" elapsed="0.175286"/>
+</kw>
+<kw name="enter password" owner="Login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:31.923380" level="INFO">Typing text 'superadmin' into text field 'id:password'.</msg>
+<arg>${txt_LoginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:31.922297" elapsed="0.184023"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-04-04T10:24:31.921108" elapsed="0.185385"/>
+</kw>
+<kw name="click sign in button" owner="Login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:32.107480" level="INFO">Clicking button 'id:login_btn'.</msg>
+<arg>${btn_SignInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-04T10:24:32.107140" elapsed="1.380721"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:24:32.106751" elapsed="1.381281"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-04T10:24:38.489505" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-04T10:24:33.488222" elapsed="5.001612"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-04T10:24:38.566408" level="INFO">Current page contains text 'The provided credentials do not match our records.'.</msg>
+<arg>${expected_result}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-04T10:24:38.491758" elapsed="0.074848"/>
+</kw>
+<arg>'${expected_result}'=='Dashboard'</arg>
+<arg>Page Should Contain</arg>
+<arg>Dashboard</arg>
+<arg>ELSE</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_result}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-04-04T10:24:38.490573" elapsed="0.076171"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-04T10:24:38.566962" elapsed="2.333546"/>
+</kw>
+<arg>wrongadmin</arg>
+<arg>superadmin</arg>
+<arg>The provided credentials do not match our records.</arg>
+<status status="PASS" start="2025-04-04T10:24:19.777502" elapsed="21.123407"/>
+</kw>
+<status status="PASS" start="2025-04-04T10:24:19.775609" elapsed="21.126558"/>
+</test>
+<test id="s1-t4" name="Empaty Username" line="14">
+<kw name="Login With Credentials">
+<msg time="2025-04-04T10:24:40.907890" level="FAIL">Keyword 'Login With Credentials' expected 3 arguments, got 2.</msg>
+<arg>superadmin</arg>
+<arg>The provided credentials do not match our records.</arg>
+<status status="FAIL" start="2025-04-04T10:24:40.907305" elapsed="0.000797">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
+</kw>
+<status status="FAIL" start="2025-04-04T10:24:40.905471" elapsed="0.004049">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
+</test>
+<test id="s1-t5" name="Empaty Password" line="15">
+<kw name="Login With Credentials">
+<msg time="2025-04-04T10:24:40.917893" level="FAIL">Keyword 'Login With Credentials' expected 3 arguments, got 2.</msg>
+<arg>superadmin@gmail.com</arg>
+<arg>The provided credentials do not match our records.</arg>
+<status status="FAIL" start="2025-04-04T10:24:40.917036" elapsed="0.001146">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
+</kw>
+<status status="FAIL" start="2025-04-04T10:24:40.913137" elapsed="0.006680">Keyword 'Login With Credentials' expected 3 arguments, got 2.</status>
+</test>
+<status status="FAIL" start="2025-04-04T10:23:36.954413" elapsed="63.969240"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test1" id="s1" pass="3" fail="2" skip="0">Login Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

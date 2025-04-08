@@ -1,39 +1,27 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library           SeleniumLibrary
 Resource  ../Resources/Login_Keywords.robot
+Test Template     Login With Credentials
 
 *** Variables ***
-${URL}           https://wrteam.net/
-${BROWSER}       Chrome
-${USERNAME}      superadmin@gmail.com
-${PASSWORD}      superadmin
-
-${INVALIAD_USERNAME}        ABC@GMAIL.COM
-${INVALIAD_PASSWORD}        123
+${URL}            https://wrteam.net/
+${BROWSER}        Chrome
 
 *** Test Cases ***
-Verify Login with Valid Credentials
+Valid Login                superadmin@gmail.com         superadmin        Dashboard
+Invalid Password           superadmin@gmail.com         wrongpass       The provided credentials do not match our records.
+Invalid Username           wrongadmin                   superadmin      The provided credentials do not match our records.
+
+*** Keywords ***
+Login With Credentials
+    [Arguments]    ${username}    ${password}    ${expected_result}
     Open Browser    ${URL}    ${BROWSER}
     maximize browser window
     click login button
-
-    Wait Until Element Is Visible    ${txt_LoginUserName}
-    enter username      ${USERNAME}
-    enter password      ${PASSWORD}
+    enter username      ${username}
+    enter password      ${password}
     click sign in button
-    title should be    Dashboard || eSchool - Saas
-    #verify success login
-    Capture Page Screenshot
-    Close Browser
-
-Verify Login with Invalid Credentials
-    Open Browser    ${URL}    ${BROWSER}
-    maximize browser window
-    click login button
-    enter username      ${INVALIAD_USERNAME}
-    enter password      ${INVALIAD_PASSWORD}
-    click sign in button
-    wait until element is visible    xpath=//div[@class='jq-toast-single jq-has-icon jq-icon-error']       timeout=10s
-    log to console    The provided credentials do not match our records.
-    Capture Page Screenshot
+    sleep    5
+    Run Keyword If    '${expected_result}'=='Dashboard'     Page Should Contain     Dashboard
+    ...               ELSE    Page Should Contain     ${expected_result}
     Close Browser

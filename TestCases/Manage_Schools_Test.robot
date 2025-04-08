@@ -64,6 +64,8 @@ Manage Schools
     enter domain name   ${domain}
 
     click on submit
+    sleep    3
+    page should contain    Data Saved Successfully
     sleep    10
 
 

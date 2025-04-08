@@ -38,6 +38,7 @@ Manage Form Test
     Wait Until Element Is Visible  ${btn_submitbtn}  timeout=10s
     click on submit button
     sleep    4
+    page should contain    Data Saved Successfully
     reload page
     sleep    3
     close browser

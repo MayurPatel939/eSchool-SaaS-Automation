@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04ef8c48-4db1-48a3-a87f-656e23ab396a" name="Changes" comment="commit -m &quot;adding all scripts&quot;">
-      <change afterPath="$PROJECT_DIR$/AutoItScripts/fileupload.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageObjects/Addons_Locators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageObjects/Package_Locators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Package_Keywords.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/Package.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/Package_Test.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/Manage_Schools_Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Manage_Schools_Locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Manage_Schools_Keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Manage_Schools_Keywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/School_Register_Form_Field_Keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Schools_Register_Form_Field_Keywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/Login_Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Login_Test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/Login_Test1.robot" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/Manage_Schools_Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Manage_Schools_Test.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/Schools_Register_Form_Fields_Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Schools_Register_Form_Fields_Test.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
@@ -47,17 +50,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Manage_Schools_Locators.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/GURUDEV/Documents/intellibot.jar",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Manage_Schools_Locators.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GURUDEV/Documents/intellibot.jar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\GURUDEV\PycharmProjects\Automation\AutoItScripts" />
